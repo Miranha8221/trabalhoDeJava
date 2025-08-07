@@ -6,9 +6,8 @@ public class Trabalho {
     char[] letras = texto.toCharArray();
     for(int i = 0; i < letras.length; i++){
       System.out.print(letras[i]);
-      delay(10);
+      delay(500);
     }
-    System.out.println();
   }
 
   public static void pauseComEnter() {
@@ -28,7 +27,7 @@ public class Trabalho {
    } 
     public static void main(String[] args) {
 
-
+      //comentario super util
 
 
     System.out.println("Boas vindas, aventureiro! Me diga, qual o seu nome?");
@@ -82,6 +81,20 @@ public class Trabalho {
       } 
       System.out.println();    
     }
+
+    delay(1500);
+
+    System.out.println("""
+      ░██████     ░███    ░█████████  ░██████░██████████░██     ░██ ░██           ░██████        ░██   
+    ░██    ░██   ░██░██   ░██     ░██   ░██      ░██    ░██     ░██ ░██          ░██   ░██     ░████   
+    ░██         ░██  ░██  ░██     ░██   ░██      ░██    ░██     ░██ ░██         ░██     ░██      ░██   
+    ░██        ░█████████ ░█████████    ░██      ░██    ░██     ░██ ░██         ░██     ░██      ░██   
+    ░██        ░██    ░██ ░██           ░██      ░██    ░██     ░██ ░██         ░██     ░██      ░██   
+    ░██    ░██ ░██    ░██ ░██           ░██      ░██     ░██   ░██  ░██          ░██   ░██       ░██   
+      ░██████  ░██    ░██ ░██         ░██████    ░██      ░██████   ░██████████   ░██████      ░██████ 
+                                                                                    """);
+
+    delay(1500);
     
     System.out.println("Está tarde... Você está voltando de uma festa na taverna em comemoração a mais uma missão cumprida na guilda.");
     
@@ -118,17 +131,17 @@ public class Trabalho {
     pauseComEnter();
 
     System.out.println("A coisa então dá um passo adiante, te encarando fixamente com olhos arregalados...\n");
-    delay(1500);
+    delay(4000);
     System.out.println("Homem Estranho - Por favor... Me ajude...\n");
-    delay(1500);
+    delay(4000);
     System.out.println("""
     Enquanto dizia isso, ele ergue seus braços em sua direção.
     De seus dedos, garras se aproximam cada vez mais de você.
     """);
-    delay(1500);
+    delay(4000);
     System.out.println("Você de repente sente uma intenção assassina.\n");
-    delay(1500);
-    System.out.println("""
+    delay(4000);
+    System.out.print("""
     -FAÇA UMA ESCOLHA-
     
     1-Ajudá-lo
