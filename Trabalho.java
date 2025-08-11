@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner;import java.util.Scanner;
 
 public class Trabalho {
 
@@ -25,9 +25,15 @@ public class Trabalho {
             Thread.currentThread().interrupt();
         }
    } 
+
+    public class Main {
+static void Combate1(){
+
+}
+    }
     public static void main(String[] args) {
 
-      //comentario super util
+    
 
 
     System.out.println("Boas vindas, aventureiro! Me diga, qual o seu nome?");
@@ -149,11 +155,32 @@ public class Trabalho {
 
     letraPorLetra("MATÁ-LO");
 
-    //dasdadadeqdadeq
+    String escolha1 = s.nextLine();
 
+   
 
-    
+    if (escolha1 == "1"){
+   
+      System.out.println("""
+      você decide se aproximar do homem perturbado, 
+      ele começa a se desfigurar em algo grotesco e pútrido.
+      Você não tem outra escolha a não ser lutar com ele...boa sorte
+          """);
+
+     
+
+    }else if (escolha1 == "2") {
+      
+    }{
+      System.out.println("""
+       você escolhe assasinar um homem perturbado na calada da noite,
+       você olha para trás e só vê que alguém te viu cometendo o crime. 
+       No próximo dia você passa pelas ruas e tudo que ouve é as pessoas murmurando
+       sobre você ser um assasino sem coração, mas ninguém aparenta ter certeza de que os 
+       eventos de ontem realmente aconteceram.""");
+    }
     
      
   }
 }
+
