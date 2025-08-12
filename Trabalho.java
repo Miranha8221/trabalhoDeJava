@@ -945,7 +945,42 @@ static void lutaPaladino(){
         """);
     int escolha2 = scanner.nextInt();
     if (escolha2 == 1) {
-      //arquivo do final bom
+      System.out.println("""
+          Você se aproxima dele, pronto para dar o golpe final...
+          Antes que pudesse acertar, ele pula em você e crava sua adaga...
+          Antes de desmaiar você o finaliza...
+          """;)
+
+    pauseComEnter();
+
+    System.out.println("""
+        Você acorda com o balançar da carruagem...
+        Há um curativo no lugar onde você foi esfaqueado...
+
+        Escanour - Ah! Você finalmente acordou!
+        
+        """;)
+
+        delay(1500);
+
+        System.out.println("Escanour - Não se mova muito! Ainda está se recuperando.\n\n" + nome + " - O que houve...?");
+
+        delay(1500);
+
+        System.out.println("""
+
+            Escanour - Você derrotou o culpado pelos mortos-vivos, mas ele te apunhalou...
+            """;)
+
+        pauseComEnter();
+
+        System.out.println("""
+            Após algumas poucas horas, vocês chegam de volta na cidade...
+            Na guilda, uma festa em comemoração à vitória daquele dia.
+            No centro da festa, você, o herói que derrotou as forças malígnas.
+            """;)
+
+
       }
     else {
       //arquivo do final ruim|redenção
