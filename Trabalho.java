@@ -66,7 +66,7 @@ static void lutaGuerreiro(){
       }
       else if (acao == 2) {
         System.out.println("""
-        Você conjura uma barreira que defende o golpe do oponente...
+        Você conjura uma barreira que empurra o oponente...
         Enquanto ele está desnorteado, você conjura uma bola de fogo...
         O oponente explode e seus restos queimam.""");
       }
@@ -101,7 +101,7 @@ static void lutaGuerreiro(){
       }
     
       break;
-  
+      
     default:
       break;
   }
@@ -133,9 +133,9 @@ static void lutaGuerreiro(){
       }
       else {
         System.out.println("""
-        Você tenta fugir, conjura um fe
-u
-        Você cai morto. Parabéns, covarde!
+        Você tenta fugir, mas o oponente conjura um feitiço...
+        com magia ele te faz tropeçar e você cai de cara numa pedra...
+        Você morre. Parabéns, covarde!
         """);
       }
 
@@ -144,20 +144,20 @@ u
     case 2:
       if (acao == 1) {
         System.out.println("""
-        Ele te ataca e você conjura um feitiço...
-        Como conjurar um feitiço demora, ele te acerta.
-        Você cai morto.""");
+        ambos conjuram bola de fogo...
+        as bolas de fogo colidem e fazem uma grande explosão...
+        ambos morrem queimados...""");
       }
       else if (acao == 2) {
         System.out.println("""
-        Você conjura uma barreira que defende o golpe do oponente...
-        Enquanto ele está desnorteado, você conjura uma bola de fogo...
-        O oponente explode e seus restos queimam.""");
+        Você conjura uma barreira que deflete o feitiço do oponente...
+        o feitiço o mata...""");
       }
       else {
         System.out.println("""
-        Você tenta fugir, mas ele te apunhala pelas costas...
-        Você cai morto. Parabéns, covarde!
+         Você tenta fugir, mas o oponente conjura um feitiço...
+        com magia ele te faz tropeçar e você cai de cara numa pedra...
+        Você morre. Parabéns, covarde!
         """);
 
         break;
@@ -168,19 +168,21 @@ u
     case 3:
       if (acao == 1) {
         System.out.println("""
-        Ele te ataca, mas acerta a armadura. Você fica intocado...
-        Você contra-ataca e o oponente cai morto.""");
+        O oponente conjura um feitiço e você tenta atacar...
+        ele atravessa sua armadura que é fraca contra magia...
+        você cai morto...""");
       }
       else if (acao == 2) {
         System.out.println("""
-        Você puxa seu escudo, mas ele é pesado...
-        Isso cria uma brecha em sua defesa e o oponente aproveita...
-        Ele te acerta um golpe crítico e você morre.""");
+        Você puxa seu escudo que é forte contra magias...
+        antes que o oponente conjurasse outro feitiço você contra-ataca...
+        o oponente cai morto...""");
       }
       else {
         System.out.println("""
-        Você tenta fugir, mas ele te apunhala pelas costas...
-        Você cai morto. Parabéns, covarde!
+        Você tenta fugir, mas o oponente conjura um feitiço...
+        com magia ele te faz tropeçar e você cai de cara numa pedra...
+        Você morre. Parabéns, covarde!
         """);
       }
     
@@ -188,10 +190,101 @@ u
   
     default:
       break;
+
+      
   }
   
 }
     
+static void lutaPaladino(){
+  Scanner scanner = new Scanner(System.in);
+  System.out.println("""
+  --O Oponente levanta o escudo--
+  
+  |1-Atacar|2-Defender|3-Fugir|
+  """);
+  
+  int acao = scanner.nextInt();
+  switch (classe) {
+    case 1:
+      if (acao == 1) {
+        System.out.println("""
+        você tenta atacar, mas sua espada quebra...
+        seu crânio se parte em mil pedaços pela maça de seu oponente...""");
+      }
+      else if (acao == 2) {
+        System.out.println("""
+        você desvia dos golpes até cansar seu oponente...
+        isso cria uma brecha que você usa para um ataque crítico...
+        seu oponente cai morto...""");
+      }
+      else {
+        System.out.println("""
+        você tenta fugir...
+        seu oponente com toda sua benevolênica o ajuda...
+        ele te arremessa para o alto e a queda te mata...
+        """);
+      }
+
+      break;
+
+    case 2:
+      if (acao == 1) {
+        System.out.println("""
+        você conjura uma bola de fogo...
+        ela atravessa a armadura e cozinha o seu oponente...""");
+      }
+      else if (acao == 2) {
+        System.out.println("""
+        você conjura uma barreira de defesa...
+        seu oponente esmaga a barreira com você dentro...
+           """);
+      }
+      else {
+        System.out.println("""
+         você tenta fugir...
+        seu oponente com toda sua benevolênica o ajuda...
+        ele te arremessa para o alto e a queda te mata...
+        """);
+
+        break;
+
+      }      
+
+    
+    case 3:
+      if (acao == 1) {
+        System.out.println("""
+        ambos tentam acertar acertar acabeça do adversário...
+        ambos acertam e esmagam seus crânios...
+           """);
+      }
+      else if (acao == 2) {
+        System.out.println("""
+        você defende o golpe com seu escudo...
+        o ataque de seu oponente deixou uma brecha...
+        você aproveita e acerta sua cabeça, matando-o... 
+           
+           """);
+      }
+      else {
+        System.out.println("""
+        Você tenta fugir, mas com o peso de sua armadura
+        você não resiste a fatiga e cai no chão,
+        sua cara acerta uma pedra e você morre,
+        parabéns covarde!
+        """);
+      }
+    
+      break;
+  
+    default:
+      break;
+
+      
+  }
+  
+}
     public static void main(String[] args) {
 
     
@@ -429,7 +522,7 @@ u
                                                                           
                                                                           
         """);
-
+    
     pauseComEnter();
 
     System.out.println("""
