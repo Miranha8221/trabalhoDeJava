@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 import java.util.Random;
 
@@ -300,7 +301,7 @@ static void lutaPaladino(){
     case 3:
       if (acao == 1) {
         System.out.println("""
-        ambos tentam acertar acertar acabeça do adversário...
+        ambos tentam acertar a cabeça do adversário...
         ambos acertam e esmagam seus crânios...
 
            """);
@@ -944,12 +945,14 @@ static void lutaPaladino(){
         2-Sacar a Espada
         """);
     int escolha2 = scanner.nextInt();
-    if (escolha2 == 1) {
+    switch (escolha2) {
+      case 1:
+      if (escolha2 == 1) {
       System.out.println("""
           Você se aproxima dele, pronto para dar o golpe final...
           Antes que pudesse acertar, ele pula em você e crava sua adaga...
           Antes de desmaiar você o finaliza...
-          """;)
+          """);
 
     pauseComEnter();
 
@@ -959,7 +962,7 @@ static void lutaPaladino(){
 
         Escanour - Ah! Você finalmente acordou!
         
-        """;)
+        """);
 
         delay(1500);
 
@@ -970,7 +973,7 @@ static void lutaPaladino(){
         System.out.println("""
 
             Escanour - Você derrotou o culpado pelos mortos-vivos, mas ele te apunhalou...
-            """;)
+            """);
 
         pauseComEnter();
 
@@ -978,14 +981,59 @@ static void lutaPaladino(){
             Após algumas poucas horas, vocês chegam de volta na cidade...
             Na guilda, uma festa em comemoração à vitória daquele dia.
             No centro da festa, você, o herói que derrotou as forças malígnas.
-            """;)
 
+            FIM
+
+    
+            """);
+            
 
       }
-    else {
-      //arquivo do final ruim|redenção
-    }
+   
 
+
+       
+        break;
+    case 2: 
+    if (escolha2 == 2) {
+      System.out.println("""
+        Você escolhe empunhar a espada amaldiçoada, ela se funde ao seu corpo, mente e alma.
+        Sua escolha final chegou, você irá usar esse poder para governar sem misericórdia sobre os mortais?
+        Ou você vai redimir os seus pecados e acabar com a maldição mesmo que custe sua vida?
+        
+        FAÇA UMA ESCOLHA
+
+        1- GOVERNAR COMO O NOVO REI AMALDIÇOADO
+        2- redenção
+
+          """);
+
+    
+        
+      
+    }
+      default:
+        break;
+    }
+    int escolha3 = scanner.nextInt();
+    if (escolha3 == 1) {
+      System.out.println("""
+          Sua cidade natal está em chamas, a guilda virou uma pilha de cinzas e os guardas são mortos-vivos
+          feitos para servir a eternidade. O seu nome é um tabu, que os vivos tremem só de ouvir,
+          o nome daquele que criou os pesadelos, o rei maldito 
+          """ + nome + ".");
+    }else{
+      System.out.println("""
+           A lábia da espada não foi o suficiente para suprir o herói que ainda tem em você.
+           O metal vermelho e brilhante se quebra em mil pedaços e o som ecoa pelo reino inteiro...
+           a maldição começa a se alimentar do seu corpo com a ausência da espada e você sucumbi a seus
+           ferimentos. A guilda encontra o seu corpo e uma estátua de você foi erguida no centro de sua cidade,
+           dizendo nela "aqui jaz 
+          """ + nome + """
+               o herói que salvou o reino da maldição, a custa de sua própria vida."
+              """);
+    }
+    
   }
     }
 
