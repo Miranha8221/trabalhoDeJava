@@ -513,6 +513,10 @@ static void lutaPaladino(){
      Após algumas horas, você finalmente adormece...
      """);
 
+     pauseComEnter();
+
+     
+
     }else if (escolha1 == 2) {
       System.out.println("""
        você escolhe assasinar o homem perturbado na calada da noite,
@@ -523,6 +527,7 @@ static void lutaPaladino(){
 
     pauseComEnter();
     
+    }
     System.out.println("""
     .d8888b.                    d8b 888             888                .d8888b.  
   d88P  Y88b                   Y8P 888             888               d88P  Y88b 
@@ -1037,4 +1042,3 @@ static void lutaPaladino(){
   }
     }
 
-}
