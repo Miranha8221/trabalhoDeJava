@@ -49,6 +49,7 @@ static void lutaGuerreiro(){
         Ambos se acertam e caem mortos.
 
         """);
+        System.exit(0);
       }
       else if (acao == 2) {
         System.out.println("""
@@ -63,6 +64,7 @@ static void lutaGuerreiro(){
         Você cai morto. Parabéns, covarde!
 
         """);
+        System.exit(0);
       }
 
       break;
@@ -74,6 +76,7 @@ static void lutaGuerreiro(){
         Como conjurar um feitiço demora, ele te acerta.
         Você cai morto.
         """);
+        System.exit(0);
       }
       else if (acao == 2) {
         System.out.println("""
@@ -89,6 +92,7 @@ static void lutaGuerreiro(){
         Você cai morto. Parabéns, covarde!
 
         """);
+        System.exit(0);
 
         break;
 
@@ -110,6 +114,7 @@ static void lutaGuerreiro(){
         Ele te acerta um golpe crítico e você morre.
         
         """);
+        System.exit(0);
       }
       else {
         System.out.println("""
@@ -117,6 +122,7 @@ static void lutaGuerreiro(){
         Você cai morto. Parabéns, covarde!
 
         """);
+        System.exit(0);
       }
     
       break;
@@ -153,6 +159,7 @@ static void lutaGuerreiro(){
         A bola de fogo te queima até a morte...
         
         """);
+        System.exit(0);
       }
       else {
         System.out.println("""
@@ -161,6 +168,7 @@ static void lutaGuerreiro(){
         Você morre. Parabéns, covarde!
 
         """);
+        System.exit(0);
       }
 
       break;
@@ -173,6 +181,7 @@ static void lutaGuerreiro(){
         ambos morrem queimados...
         
         """);
+        System.exit(0);
       }
       else if (acao == 2) {
         System.out.println("""
@@ -188,6 +197,7 @@ static void lutaGuerreiro(){
         Você morre. Parabéns, covarde!
 
         """);
+        System.exit(0);
 
         break;
 
@@ -202,6 +212,7 @@ static void lutaGuerreiro(){
         você cai morto...
         
         """);
+        System.exit(0);
       }
       else if (acao == 2) {
         System.out.println("""
@@ -218,6 +229,7 @@ static void lutaGuerreiro(){
         Você morre. Parabéns, covarde!
 
         """);
+        System.exit(0);
       }
     
       break;
@@ -248,6 +260,7 @@ static void lutaPaladino(){
         seu crânio se parte em mil pedaços pela maça de seu oponente...
         
         """);
+        System.exit(0);
       }
       else if (acao == 2) {
         System.out.println("""
@@ -265,6 +278,7 @@ static void lutaPaladino(){
         Parabéns, covarde!
 
         """);
+        System.exit(0);
       }
 
       break;
@@ -283,6 +297,7 @@ static void lutaPaladino(){
         seu oponente esmaga a barreira com você dentro...
 
            """);
+           System.exit(0);
       }
       else {
         System.out.println("""
@@ -292,6 +307,7 @@ static void lutaPaladino(){
         Parabéns, covarde!
 
         """);
+        System.exit(0);
 
         break;
 
@@ -305,6 +321,7 @@ static void lutaPaladino(){
         ambos acertam e esmagam seus crânios...
 
            """);
+           System.exit(0);
       }
       else if (acao == 2) {
         System.out.println("""
@@ -322,6 +339,7 @@ static void lutaPaladino(){
         Parabéns, covarde!
 
         """);
+        System.exit(0);
       }
     
       break;
@@ -513,10 +531,6 @@ static void lutaPaladino(){
      Após algumas horas, você finalmente adormece...
      """);
 
-     pauseComEnter();
-
-     
-
     }else if (escolha1 == 2) {
       System.out.println("""
        você escolhe assasinar o homem perturbado na calada da noite,
@@ -524,10 +538,10 @@ static void lutaPaladino(){
        No próximo dia você passa pelas ruas e tudo que ouve é as pessoas murmurando
        sobre você ser um assasino sem coração, mas ninguém aparenta ter certeza de que os 
        eventos de ontem realmente aconteceram.""");
+    }
 
     pauseComEnter();
     
-    }
     System.out.println("""
     .d8888b.                    d8b 888             888                .d8888b.  
   d88P  Y88b                   Y8P 888             888               d88P  Y88b 
@@ -569,7 +583,7 @@ static void lutaPaladino(){
     pauseComEnter();
 
     System.out.println("""
-     Após investigações, descobre-se que a fonte desta magia estranha está localizada no norte...
+     Após investigações, desobre-se que a fonte desta magia estranha está localizada no norte...
      Você e os aventureiros então partem para o desconhecido...
      No caminho encontram um grupo de mortos vivos andarilhos...
      Enquanto seus companheiros se preparam para lutar, um morto vivo se aproxima de você!
@@ -653,6 +667,7 @@ static void lutaPaladino(){
         Os raios vermelhos te eletrocutam até a morte...
         
         """);
+        System.exit(0);
       }
       else {
         System.out.println("""
@@ -661,6 +676,7 @@ static void lutaPaladino(){
         Você morre. Parabéns, covarde!
 
         """);
+        System.exit(0);
       }
 
       break;
@@ -673,6 +689,7 @@ static void lutaPaladino(){
         Você é eletrocutado e cai morto...
         
         """);
+        System.exit(0);
       }
       else if (acao == 2) {
         System.out.println("""
@@ -688,6 +705,7 @@ static void lutaPaladino(){
         Você morre. Parabéns, covarde!
 
         """);
+        System.exit(0);
 
         break;
 
@@ -702,6 +720,7 @@ static void lutaPaladino(){
         você cai morto...
         
         """);
+        System.exit(0);
       }
       else if (acao == 2) {
         System.out.println("""
@@ -718,6 +737,7 @@ static void lutaPaladino(){
         Você morre. Parabéns, covarde!
 
         """);
+        System.exit(0);
       }
     
       break;
@@ -744,6 +764,7 @@ static void lutaPaladino(){
         O oponente te mata com um único soco...
         
         """);
+        System.exit(0);
       }
       else if (acao == 2) {
         System.out.println("""
@@ -761,6 +782,7 @@ static void lutaPaladino(){
         Parebéns, covarde!
 
         """);
+        System.exit(0);
       }
 
       break;
@@ -780,6 +802,7 @@ static void lutaPaladino(){
         Seu oponente esmaga a barreira com você dentro...
 
            """);
+           System.exit(0);
       }
       else {
         System.out.println("""
@@ -789,6 +812,7 @@ static void lutaPaladino(){
         Parebéns, covarde!
 
         """);
+        System.exit(0);
 
         break;
 
@@ -803,6 +827,7 @@ static void lutaPaladino(){
         Ele acerta um golpe crítico, te matando...
 
            """);
+           System.exit(0);
       }
       else if (acao == 2) {
         System.out.println("""
@@ -821,6 +846,7 @@ static void lutaPaladino(){
         Parabéns, covarde!
 
         """);
+        System.exit(0);
       }
     
       break;
@@ -848,6 +874,7 @@ static void lutaPaladino(){
         O oponente se cura, mas você cai morto...
 
         """);
+        System.exit(0);
       }
       else if (acao == 2) {
         System.out.println("""
@@ -864,6 +891,7 @@ static void lutaPaladino(){
         Parabéns, covarde!
 
         """);
+        System.exit(0);
       }
 
       break;
@@ -876,6 +904,7 @@ static void lutaPaladino(){
         Você cai morto.
 
         """);
+        System.exit(0);
       }
       else if (acao == 2) {
         System.out.println("""
@@ -893,6 +922,7 @@ static void lutaPaladino(){
         Parabéns, covarde!
 
         """);
+        System.exit(0);
 
         break;
 
@@ -914,6 +944,7 @@ static void lutaPaladino(){
         Ele te acerta um golpe crítico e você morre.
 
         """);
+        System.exit(0);
       }
       else {
         System.out.println("""
@@ -923,6 +954,7 @@ static void lutaPaladino(){
         Parabéns, covarde!
 
         """);
+        System.exit(0);
       }
     
       break;
@@ -1041,4 +1073,3 @@ static void lutaPaladino(){
     
   }
     }
-
