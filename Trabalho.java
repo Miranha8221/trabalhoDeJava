@@ -34,7 +34,7 @@ static void lutaGuerreiro(){
   
   |1-Atacar|2-Defender|3-Fugir|
   """);
-  int classe = 0;
+  
   int acao = scanner.nextInt();
   switch (classe) {
     case 1:
@@ -108,6 +108,90 @@ static void lutaGuerreiro(){
   
 }
     }
+
+    static void lutaMago(){
+  Scanner scanner = new Scanner(System.in);
+  System.out.println("""
+  --O Oponente Conjura um Feitiço--
+  
+  |1-Atacar|2-Defender|3-Fugir|
+  """);
+  
+  int acao = scanner.nextInt();
+  switch (classe) {
+    case 1:
+      if (acao == 1) {
+        System.out.println("""
+        Você ataca antes que ele termine o encantamento...
+        O oponente cai morto.""");
+      }
+      else if (acao == 2) {
+        System.out.println("""
+        Você tenta defender o feitiço...
+        A magia atravessa seu escudo fraco...
+        A bola de fogo te queima até a morte...""");
+      }
+      else {
+        System.out.println("""
+        Você tenta fugir, conjura um fe
+u
+        Você cai morto. Parabéns, covarde!
+        """);
+      }
+
+      break;
+
+    case 2:
+      if (acao == 1) {
+        System.out.println("""
+        Ele te ataca e você conjura um feitiço...
+        Como conjurar um feitiço demora, ele te acerta.
+        Você cai morto.""");
+      }
+      else if (acao == 2) {
+        System.out.println("""
+        Você conjura uma barreira que defende o golpe do oponente...
+        Enquanto ele está desnorteado, você conjura uma bola de fogo...
+        O oponente explode e seus restos queimam.""");
+      }
+      else {
+        System.out.println("""
+        Você tenta fugir, mas ele te apunhala pelas costas...
+        Você cai morto. Parabéns, covarde!
+        """);
+
+        break;
+
+      }      
+
+    
+    case 3:
+      if (acao == 1) {
+        System.out.println("""
+        Ele te ataca, mas acerta a armadura. Você fica intocado...
+        Você contra-ataca e o oponente cai morto.""");
+      }
+      else if (acao == 2) {
+        System.out.println("""
+        Você puxa seu escudo, mas ele é pesado...
+        Isso cria uma brecha em sua defesa e o oponente aproveita...
+        Ele te acerta um golpe crítico e você morre.""");
+      }
+      else {
+        System.out.println("""
+        Você tenta fugir, mas ele te apunhala pelas costas...
+        Você cai morto. Parabéns, covarde!
+        """);
+      }
+    
+      break;
+  
+    default:
+      break;
+  }
+  
+}
+    
     public static void main(String[] args) {
 
     
@@ -290,7 +374,20 @@ static void lutaGuerreiro(){
     }
     pauseComEnter();
     
-    System.out.println("capitulo 2");
+    System.out.println("""
+    .d8888b.                    d8b 888             888                .d8888b.  
+  d88P  Y88b                   Y8P 888             888               d88P  Y88b 
+  888    888                       888             888                      888 
+  888         8888b.  88888b.  888 888888 888  888 888  .d88b.            .d88P 
+  888            "88b 888 "88b 888 888    888  888 888 d88""88b       .od888P"  
+  888    888 .d888888 888  888 888 888    888  888 888 888  888      d88P"      
+  Y88b  d88P 888  888 888 d88P 888 Y88b.  Y88b 888 888 Y88..88P      888"       
+  "Y8888P"  "Y888888 88888P"  888  "Y888  "Y88888 888  "Y88P"       888888888  
+                      888                                                       
+                      888                                                       
+                      888                                                       
+          
+          """);
 
     pauseComEnter();
 
@@ -308,15 +405,20 @@ static void lutaGuerreiro(){
     pauseComEnter();
 
     System.out.println("""
-      Depois de cavalgar por dias o grupo para e decidem se separar para caçar algo para comer
-      você está a procura de um cervo mas algo surge das cinzas cobrindo o chão, algo que antes
-      era morto e pelas vestes um usuário da magia. Você se prepara para o combate.
+     Você encontra um acampamento militar com as tropas de mortos-vivos cercando um castelo sombrio.
+     seu grupo de aventureiros começa a combater as tropas malignas, você se encontra com o general
+     um mago que está usando necromancia para manter os mortos de pé, incluindo ele. Você se prepara
+     para o combate.
       
        """);
 
     pauseComEnter();
       
     //insira combate aqui
+
+    pauseComEnter();
+    
+    System.out.println();
 
     System.out.println("""
  ██████  █████  ██████  ██ ████████ ██    ██ ██       ██████      ██████  
@@ -330,7 +432,18 @@ static void lutaGuerreiro(){
 
     pauseComEnter();
 
-    System.out.println("");
+    System.out.println("""
+      Você entra no castelo sombrio e navega pelos corredores escuros, 
+      procurando aquele que começou tudo. Você encontra a sala do trono e ele está te esperando,
+      a arma dele é uma espada que tem um brilho vermelho e misterioso.
+          """);
+
+    pauseComEnter();
+
+    //insira combate aqui
+
+    pauseComEnter();
+
+    
   }
 }
-
