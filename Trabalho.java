@@ -9,7 +9,7 @@ public class Trabalho {
       delay(500);
     }
   }
-
+//Ricardo esteve aqui kkkkkkkk
   public static void pauseComEnter() {
         Scanner scanner = new Scanner(System.in);
         delay(1500);
@@ -540,3 +540,4 @@ static void lutaPaladino(){
     
   }
 }
+
