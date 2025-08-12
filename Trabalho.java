@@ -3,20 +3,20 @@ import java.util.Random;
 
 public class Trabalho {
   static int classe;
-  static Random random = new Random();
+  static Random random = new Random();                    //variáveis usadas em funções
   static int classeInimigo = 0;
 
 
   public static void letraPorLetra(String texto){
     char[] letras = texto.toCharArray();
-    for(int i = 0; i < letras.length; i++){
+    for(int i = 0; i < letras.length; i++){              //função para suspense no capitulo 1
       System.out.print(letras[i]);
       delay(500);
     }
   }
-//Ricardo esteve aqui kkkkkkkk
+
   public static void pauseComEnter() {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);         //função para apertar enter para continuar o jogo
         delay(1500);
         System.out.println("\n\n=================================\nPressione ENTER para continuar...\n=================================\n");
         scanner.nextLine();
@@ -26,24 +26,24 @@ public class Trabalho {
           
       try {
             Thread.sleep(milissegundos);
-        } catch (InterruptedException e) {
+        } catch (InterruptedException e) {            //função para delay em textos de narrativa
             Thread.currentThread().interrupt();
         }
    } 
 static void lutaGuerreiro(){
-  Scanner scanner = new Scanner(System.in);
+  Scanner scanner = new Scanner(System.in);           //função para luta onde o oponente é um guerreiro
   System.out.println("""
   --O Oponente Se Prepara para Atacar--
   
-  |1-Atacar|2-Defender|3-Fugir|
+  |1-Atacar|2-Defender|3-Fugir|       
 
   """);
   
   int acao = scanner.nextInt();
   switch (classe) {
-    case 1:
-      if (acao == 1) {
-        System.out.println("""
+    case 1:                                             //caso1 você é um guerreiro, caso2 você é um mago, caso3 você é um paladino
+      if (acao == 1) {                                  //acao1 é para ataque, acao2 é para defesa, acao3 é para fugir
+        System.out.println("""                         
         Ele te ataca e você ataca de volta...
         Ambos se acertam e caem mortos.
 
@@ -126,7 +126,7 @@ static void lutaGuerreiro(){
   
 }
 
-    static void lutaMago(){
+    static void lutaMago(){                             //a mesma função porém seu oponente é um mago
   Scanner scanner = new Scanner(System.in);
   System.out.println("""
   --O Oponente Conjura um Feitiço--
@@ -230,7 +230,7 @@ static void lutaGuerreiro(){
 }
     
 static void lutaPaladino(){
-  Scanner scanner = new Scanner(System.in);
+  Scanner scanner = new Scanner(System.in);                //a mesma função porém seu oponente é um paladino
   System.out.println("""
   --O Oponente levanta o escudo--
   
@@ -332,7 +332,7 @@ static void lutaPaladino(){
   }
 }
 
-  static void combateAleatorio(){
+  static void combateAleatorio(){                         //função para os combates serem oponentes aleatórios
     classeInimigo = random.nextInt(3) + 1;
     if (classeInimigo == 1) {
       lutaGuerreiro();
@@ -349,7 +349,7 @@ static void lutaPaladino(){
 
 
     System.out.println("Boas vindas, aventureiro! Me diga, qual o seu nome?");
-    System.out.println();
+    System.out.println();                                                                 //introdução e criação de personagem
     Scanner scanner = new Scanner(System.in);
     String nome = scanner.nextLine();
     System.out.println("\nMe diga, aventureiro " + nome + ", qual a sua classe?");
@@ -363,7 +363,7 @@ static void lutaPaladino(){
       \n1-Guerreiro
       2-Mago
       3-Paladino
-      4-Como Escolher?\n""");
+      4-Como Escolher?\n""");                           //escolhendo sua classe
       classe = scanner.nextInt();
 ;  
       
@@ -389,6 +389,10 @@ static void lutaPaladino(){
         Guerreiros possuem grande força, mas pouca resistência.
         Magos, assim como guerreiros, têm pouca resistência física, mas possuem grande poder mágico.
         Paladinos, por outro lado, têm força e resistência física, mas são lentos e fracos contra magias.
+       
+        -Guerreiros ganham fácilmente dos magos e perdem para os paladinos
+        -Magos ganham facilmente dos paladions e perdem para os guerreiros
+        -Paladinos ganham facilmente dos guerreiros e perdem para os magos
         
         4-Voltar
         
@@ -616,8 +620,8 @@ static void lutaPaladino(){
           """);
 
     pauseComEnter();
-
-    System.out.println("""
+                                                        //a batalha final foi feita com outro sistema para ter a presença das três classes
+    System.out.println("""                                    
   --O Oponente Conjura um Feitiço--
   
   |1-Atacar|2-Defender|3-Fugir|
@@ -951,4 +955,3 @@ static void lutaPaladino(){
     }
 
 }
-
