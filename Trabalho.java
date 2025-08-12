@@ -1,4 +1,5 @@
 
+
 import java.util.Scanner;
 import java.util.Random;
 
@@ -363,8 +364,18 @@ static void lutaPaladino(){
 
 }
     public static void main(String[] args) {
-
-    
+                                                    //Título
+    System.out.println("""
+░█████████             ░██          ░██                          ░██                        ░██       ░██            
+░██     ░██                         ░██                          ░██                                  ░██            
+░██     ░██  ░███████  ░██    ░████████  ░███████   ░███████  ░████████ ░██░████ ░██    ░██ ░██ ░████████  ░███████  
+░█████████  ░██    ░██ ░██   ░██    ░██ ░██    ░██ ░██           ░██    ░███     ░██    ░██ ░██░██    ░██ ░██    ░██ 
+░██   ░██   ░█████████ ░██   ░██    ░██ ░█████████  ░███████     ░██    ░██      ░██    ░██ ░██░██    ░██ ░██    ░██ 
+░██    ░██  ░██        ░██   ░██   ░███ ░██               ░██    ░██    ░██      ░██   ░███ ░██░██   ░███ ░██    ░██ 
+░██     ░██  ░███████  ░██    ░█████░██  ░███████   ░███████      ░████ ░██       ░█████░██ ░██ ░█████░██  ░███████  
+                                                                                                                     
+                                                                                                                    
+        """);
 
 
     System.out.println("Boas vindas, aventureiro! Me diga, qual o seu nome?");
@@ -422,6 +433,8 @@ static void lutaPaladino(){
       } 
       System.out.println();    
     }
+
+    
 
     delay(1500);
 
@@ -494,6 +507,7 @@ static void lutaPaladino(){
       if (escolha1 == 1){
    
       System.out.println("""
+
       Você decide se aproximar do homem perturbado, 
       ele começa a se desfigurar em algo grotesco e pútrido.
       Você não tem outra escolha a não ser lutar contra ele...
@@ -533,6 +547,7 @@ static void lutaPaladino(){
 
     }else if (escolha1 == 2) {
       System.out.println("""
+        
        você escolhe assasinar o homem perturbado na calada da noite,
        você olha para trás e só vê que alguém te viu cometendo o crime. 
        No próximo dia você passa pelas ruas e tudo que ouve é as pessoas murmurando
