@@ -1,4 +1,4 @@
-import java.util.Scanner;import java.util.Scanner;
+import java.util.Scanner;
 
 public class Trabalho {
 
@@ -26,9 +26,86 @@ public class Trabalho {
         }
    } 
 
-    public class Main {
-static void Combate1(){
+    public class main {
+static void lutaGuerreiro(){
+  Scanner scanner = new Scanner(System.in);
+  System.out.println("""
+  --O Oponente Se Prepara para Atacar--
+  
+  |1-Atacar|2-Defender|3-Fugir|
+  """);
+  int classe = 0;
+  int acao = scanner.nextInt();
+  switch (classe) {
+    case 1:
+      if (acao == 1) {
+        System.out.println("""
+        Ele te ataca e você ataca de volta...
+        Ambos se acertam e caem mortos.""");
+      }
+      else if (acao == 2) {
+        System.out.println("""
+        Você defende o golpe e contra-ataca...
+        O oponente cai morto após seu golpe.""");
+      }
+      else {
+        System.out.println("""
+        Você tenta fugir, mas ele te apunhala pelas costas...
+        Você cai morto. Parabéns, covarde!
+        """);
+      }
 
+      break;
+
+    case 2:
+      if (acao == 1) {
+        System.out.println("""
+        Ele te ataca e você conjura um feitiço...
+        Como conjurar um feitiço demora, ele te acerta.
+        Você cai morto.""");
+      }
+      else if (acao == 2) {
+        System.out.println("""
+        Você conjura uma barreira que defende o golpe do oponente...
+        Enquanto ele está desnorteado, você conjura uma bola de fogo...
+        O oponente explode e seus restos queimam.""");
+      }
+      else {
+        System.out.println("""
+        Você tenta fugir, mas ele te apunhala pelas costas...
+        Você cai morto. Parabéns, covarde!
+        """);
+
+        break;
+
+      }      
+
+    
+    case 3:
+      if (acao == 1) {
+        System.out.println("""
+        Ele te ataca, mas acerta a armadura. Você fica intocado...
+        Você contra-ataca e o oponente cai morto.""");
+      }
+      else if (acao == 2) {
+        System.out.println("""
+        Você puxa seu escudo, mas ele é pesado...
+        Isso cria uma brecha em sua defesa e o oponente aproveita...
+        Ele te acerta um golpe crítico e você morre.""");
+      }
+      else {
+        System.out.println("""
+        Você tenta fugir, mas ele te apunhala pelas costas...
+        Você cai morto. Parabéns, covarde!
+        """);
+      }
+    
+      break;
+  
+    default:
+      break;
+  }
+  
 }
     }
     public static void main(String[] args) {
@@ -162,10 +239,42 @@ static void Combate1(){
     if (escolha1 == "1"){
    
       System.out.println("""
-      você decide se aproximar do homem perturbado, 
+      Você decide se aproximar do homem perturbado, 
       ele começa a se desfigurar em algo grotesco e pútrido.
-      Você não tem outra escolha a não ser lutar com ele...boa sorte
+      Você não tem outra escolha a não ser lutar contra ele...
+      Apesar de ser um monstro, não aprece MUITO forte,
+      ainda assim, ele está além do que você é capaz de lidar sozinho,
+      principalmente bêbado do jeito que está.
           """);
+          
+      pauseComEnter();
+
+      System.out.println("""
+      Ele te ataca e você rápidamente se esquiva.
+      Antes que você pudesse tentar contra-atacar,
+      um homem encapuzado aparece e corta a cabeça da criatura
+      """);
+
+     pauseComEnter();
+     
+     System.out.println("""
+     Você rápidamente se vira para ele em postura defensiva,
+     mas ele rapidamente tira o capuz e se apresenta.
+     Escanour - Acalme-se. Sou apenas eu!
+     Disse o Mestre da Guilda, Escanour.
+     Esse grande homem bigodudo é ninguém mais
+     que o Mestre da Guilda e aventureiro mais forte.
+     """);
+
+     pauseComEnter();
+
+     System.out.println("""
+     Após uma breve conversa, você volta para casa.
+     Estranhamente, você demora a dormir,
+     mesmo sob os efeitos do álcool.
+
+     Após algumas horas, você finalmente adormece...
+     """);
 
      
 
@@ -173,14 +282,55 @@ static void Combate1(){
       
     }{
       System.out.println("""
-       você escolhe assasinar um homem perturbado na calada da noite,
+       você escolhe assasinar o homem perturbado na calada da noite,
        você olha para trás e só vê que alguém te viu cometendo o crime. 
        No próximo dia você passa pelas ruas e tudo que ouve é as pessoas murmurando
        sobre você ser um assasino sem coração, mas ninguém aparenta ter certeza de que os 
        eventos de ontem realmente aconteceram.""");
     }
+    pauseComEnter();
     
-     
+    System.out.println("capitulo 2");
+
+    pauseComEnter();
+
+    if (escolha1 == "1") {
+      System.out.println("""
+        Você reúne todos os aventureiros da ciddade para contar o que viu na noite passada,
+        eles não ficam tão chocados como você esperava. Todos dizem que estão vendo coisas parecidas
+        pela cidade e que estavam se preparando para ir atrás da origem dessa magia negra atormentando
+        a cidade. Você prepara seus pertences e sai numa jornada com outros aventureiros para ir atrás 
+        do responsável por tamanha blasfêmia.
+          """);
+    }else if (escolha1 == "2") {
+      System.out.println("");
+    }
+    pauseComEnter();
+
+    System.out.println("""
+      Depois de cavalgar por dias o grupo para e decidem se separar para caçar algo para comer
+      você está a procura de um cervo mas algo surge das cinzas cobrindo o chão, algo que antes
+      era morto e pelas vestes um usuário da magia. Você se prepara para o combate.
+      
+       """);
+
+    pauseComEnter();
+      
+    //insira combate aqui
+
+    System.out.println("""
+ ██████  █████  ██████  ██ ████████ ██    ██ ██       ██████      ██████  
+██      ██   ██ ██   ██ ██    ██    ██    ██ ██      ██    ██          ██ 
+██      ███████ ██████  ██    ██    ██    ██ ██      ██    ██      █████  
+██      ██   ██ ██      ██    ██    ██    ██ ██      ██    ██          ██ 
+ ██████ ██   ██ ██      ██    ██     ██████  ███████  ██████      ██████  
+                                                                          
+                                                                          
+        """);
+
+    pauseComEnter();
+
+    System.out.println("");
   }
 }
 
